@@ -2,38 +2,56 @@
 <html>
 
 <head>
-    <title>Mira Bootcamp - Login</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="styles.css" />
+    <title>Mira Bootcamp - Login</title>
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="#" class="leftStyle leftStyleA"><img src="./miraheadericon.png" alt="Mira Technologies Logo"
+    <header class="navbarBackground">
+        <a href="#" class="leftStyle leftStyleA"><img src="images/miraheadericon.png" alt="Mira Technologies Logo"
                 width="40px"> Mira Technologies</a>
-        <a href="#" class="floatRight">Register</a>
-    </div>
-
-    <div class="center">
-        <img src="./miraheadericon.png" alt="Mira Technologies Logo" width="60px" />
-        <h4 class="blueText blueTextSize">Login</h4>
-        <p>Login to your account</p>
-        <div class="whiteBackground">
-            <form>
-                <label for="email" class="floatLeft">Email</label>
-                <input type="email" /><br /><br />
-                <label for="password" class="floatLeft">Password</label>
-                <input type="password" /><br /><br />
-                <button class="blueButton" type="submit">LOGIN</button>
-            </form>
+        <ul class="nav  justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Register</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="container mainWidth">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="container text-center pt-5">
+                        <img src="images/miraheadericon.png" alt="Mira Technologies Logo" width="60px" />
+                        <h4 class="blueText blueTextSize pb-2">Login</h4>
+                        <p>Login to your account</p>
+                        <div class="whiteBackground">
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label for="email" class="floatLeft">Email</label>
+                                        <input type="email" /><br /><br />
+                                        <label for="password" class="floatLeft">Password</label>
+                                        <input type="password" /><br /><br />
+                                        <button type="button"
+                                            class="btn btn-primary btn-large navbarBackground blueButton">LOGIN</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <br />
+                        <a href="#" class="blueText">Forgot Password</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <br />
-        <a class="textStyle" href="#">Forgot Password</a>
-
-    </div>
-
+    </main>
+</body>
 </body>
 
 </html>
